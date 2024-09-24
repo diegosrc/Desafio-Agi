@@ -27,4 +27,13 @@ Aqui ficam os arquivos que são compartilhados entre diferentes casos de teste:
 Para rodar os testes, utilize o seguinte comando no terminal:
 
 ```bash
-robot tests/functional_tests/login_tests.robot
+.\.venv\Scripts\activate
+```bash
+
+```bash
+robot .
+```bash
+
+```bash
+.\.venv\Scripts\deactivate
+```bash
