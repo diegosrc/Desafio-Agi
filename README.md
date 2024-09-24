@@ -24,16 +24,19 @@ Aqui ficam os arquivos que são compartilhados entre diferentes casos de teste:
 
 ### Executando a Automação
 
-Para rodar os testes, utilize o seguinte comando no terminal:
+Primeiro ative o seu Python Environment:
 
 ```bash
 .\.venv\Scripts\activate
-```bash
+```
 
+Para rodar os testes, utilize o seguinte comando no terminal:
 ```bash
 robot .
-```bash
+```
+
+Ao finalizar os testes encerre com
 
 ```bash
 .\.venv\Scripts\deactivate
-```bash
+```
