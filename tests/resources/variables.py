@@ -1,5 +1,0 @@
-VALID_SEARCH_TERM = "Python Automation"
-INVALID_SEARCH_TERM = "abcdef12345"
-SEARCH_RESULTS_LOCATOR = "css=.search-results"
-NO_RESULTS_LOCATOR = "css=.no-results-message"
-EMPTY_SEARCH_ERROR_LOCATOR = "css=.error-empty-search"

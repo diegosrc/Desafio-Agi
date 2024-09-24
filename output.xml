@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-24T00:38:27.126325" rpa="false" schemaversion="5">
+<suite id="s1" name="Desafio-Agi" source="C:\Users\Diego\OneDrive\Bolsa_Inatel\Bolsa_Finatel\Documentos\Github\Desafio-Agi">
+<suite id="s1-s1" name="Tests" source="C:\Users\Diego\OneDrive\Bolsa_Inatel\Bolsa_Finatel\Documentos\Github\Desafio-Agi\tests">
+<suite id="s1-s1-s1" name="Functional Tests" source="C:\Users\Diego\OneDrive\Bolsa_Inatel\Bolsa_Finatel\Documentos\Github\Desafio-Agi\tests\functional_tests">
+<suite id="s1-s1-s1-s1" name="Search Tests" source="C:\Users\Diego\OneDrive\Bolsa_Inatel\Bolsa_Finatel\Documentos\Github\Desafio-Agi\tests\functional_tests\search_tests.robot">
+<test id="s1-s1-s1-s1-t1" name=" Valid Search Test" line="10">
+<kw name="Open Browser To Search Page" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-24T00:38:27.328571" level="INFO">Opening browser 'Chrome' to base url 'https://blogdoagi.com.br'.</msg>
+<arg>${address}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-24T00:38:27.328571" elapsed="2.514074"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-24T00:38:29.844154" elapsed="0.161685"/>
+</kw>
+<arg>${URL}</arg>
+<status status="PASS" start="2024-09-24T00:38:27.327571" elapsed="2.678790"/>
+</kw>
+<kw name="Click and search" owner="keywords">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-24T00:38:30.009957" level="INFO">Clicking link '//*[@id="ast-desktop-header"]/div/div/div/div/div[3]/div[2]/div/div/a'.</msg>
+<arg>${button_search_xpath}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T00:38:30.007897" elapsed="0.240668"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T00:38:30.249567" level="INFO">Typing text 'text' into text field '//*[@id="search-field"]'.</msg>
+<arg>${search_input_xpath}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T00:38:30.249567" elapsed="0.149627"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-24T00:38:30.399194" level="INFO">Sending key(s) ('ENTER',) to //*[@id="search-field"] element.</msg>
+<msg time="2024-09-24T00:38:30.704986" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-09-24T00:38:30.704986" level="INFO">Releasing special key ENTER.</msg>
+<arg>${search_input_xpath}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-24T00:38:30.399194" elapsed="1.549993"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T00:38:41.949464" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T00:38:31.949187" elapsed="10.000277"/>
+</kw>
+<arg>text</arg>
+<arg>${SEARCH_ELEMENT}</arg>
+<arg>${SEARCH_INPUT_ELEMENT}</arg>
+<status status="PASS" start="2024-09-24T00:38:30.006879" elapsed="11.942585"/>
+</kw>
+<doc>Teste de busca com um termo válido.</doc>
+<status status="PASS" start="2024-09-24T00:38:27.326571" elapsed="14.622893"/>
+</test>
+<doc>Testes para verificar a funcionalidade de busca no sistema.</doc>
+<status status="PASS" start="2024-09-24T00:38:27.151870" elapsed="14.798622"/>
+</suite>
+<status status="PASS" start="2024-09-24T00:38:27.150393" elapsed="14.801494"/>
+</suite>
+<status status="PASS" start="2024-09-24T00:38:27.148395" elapsed="14.805650"/>
+</suite>
+<status status="PASS" start="2024-09-24T00:38:27.127349" elapsed="14.826696"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Desafio-Agi">Desafio-Agi</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Desafio-Agi.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Functional Tests">Desafio-Agi.Tests.Functional Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Search Tests">Desafio-Agi.Tests.Functional Tests.Search Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
