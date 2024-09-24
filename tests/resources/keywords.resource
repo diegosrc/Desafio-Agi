@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    ../../.venv/Lib/site-packages/robot/libraries/XML.py
 
 *** Keywords ***
 
@@ -14,3 +15,4 @@ Click and search
     Input Text    ${search_input_xpath}    ${input}
     Press Keys  ${search_input_xpath}    ENTER
     Sleep    10
+

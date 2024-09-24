@@ -1,82 +1,359 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-24T00:38:27.126325" rpa="false" schemaversion="5">
-<suite id="s1" name="Desafio-Agi" source="C:\Users\Diego\OneDrive\Bolsa_Inatel\Bolsa_Finatel\Documentos\Github\Desafio-Agi">
-<suite id="s1-s1" name="Tests" source="C:\Users\Diego\OneDrive\Bolsa_Inatel\Bolsa_Finatel\Documentos\Github\Desafio-Agi\tests">
-<suite id="s1-s1-s1" name="Functional Tests" source="C:\Users\Diego\OneDrive\Bolsa_Inatel\Bolsa_Finatel\Documentos\Github\Desafio-Agi\tests\functional_tests">
-<suite id="s1-s1-s1-s1" name="Search Tests" source="C:\Users\Diego\OneDrive\Bolsa_Inatel\Bolsa_Finatel\Documentos\Github\Desafio-Agi\tests\functional_tests\search_tests.robot">
-<test id="s1-s1-s1-s1-t1" name=" Valid Search Test" line="10">
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-24T02:14:28.520444" rpa="false" schemaversion="5">
+<suite id="s1" name="Search Tests" source="c:\Users\Diego\OneDrive\Bolsa_Inatel\Bolsa_Finatel\Documentos\Github\Desafio-Agi\tests\functional_tests\search_tests.robot">
+<test id="s1-t1" name="Valid Search Test" line="10">
 <kw name="Open Browser To Search Page" owner="keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-24T00:38:27.328571" level="INFO">Opening browser 'Chrome' to base url 'https://blogdoagi.com.br'.</msg>
+<msg time="2024-09-24T02:14:29.164432" level="INFO">Opening browser 'Chrome' to base url 'https://blogdoagi.com.br'.</msg>
 <arg>${address}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-24T00:38:27.328571" elapsed="2.514074"/>
+<status status="PASS" start="2024-09-24T02:14:29.164432" elapsed="2.403692"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-09-24T00:38:29.844154" elapsed="0.161685"/>
+<status status="PASS" start="2024-09-24T02:14:31.568124" elapsed="0.071029"/>
 </kw>
 <arg>${URL}</arg>
-<status status="PASS" start="2024-09-24T00:38:27.327571" elapsed="2.678790"/>
+<status status="PASS" start="2024-09-24T02:14:29.164432" elapsed="2.474721"/>
 </kw>
 <kw name="Click and search" owner="keywords">
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-09-24T00:38:30.009957" level="INFO">Clicking link '//*[@id="ast-desktop-header"]/div/div/div/div/div[3]/div[2]/div/div/a'.</msg>
+<msg time="2024-09-24T02:14:31.642599" level="INFO">Clicking link '//*[@id="ast-desktop-header"]/div/div/div/div/div[3]/div[2]/div/div/a'.</msg>
 <arg>${button_search_xpath}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-24T00:38:30.007897" elapsed="0.240668"/>
+<status status="PASS" start="2024-09-24T02:14:31.642599" elapsed="0.138964"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-09-24T00:38:30.249567" level="INFO">Typing text 'text' into text field '//*[@id="search-field"]'.</msg>
+<msg time="2024-09-24T02:14:31.787446" level="INFO">Typing text 'Empréstimo' into text field '//*[@id="search-field"]'.</msg>
 <arg>${search_input_xpath}</arg>
 <arg>${input}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-24T00:38:30.249567" elapsed="0.149627"/>
+<status status="PASS" start="2024-09-24T02:14:31.784435" elapsed="0.160909"/>
 </kw>
 <kw name="Press Keys" owner="SeleniumLibrary">
-<msg time="2024-09-24T00:38:30.399194" level="INFO">Sending key(s) ('ENTER',) to //*[@id="search-field"] element.</msg>
-<msg time="2024-09-24T00:38:30.704986" level="INFO">Pressing special key ENTER to element.</msg>
-<msg time="2024-09-24T00:38:30.704986" level="INFO">Releasing special key ENTER.</msg>
+<msg time="2024-09-24T02:14:31.947355" level="INFO">Sending key(s) ('ENTER',) to //*[@id="search-field"] element.</msg>
+<msg time="2024-09-24T02:14:32.255152" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-09-24T02:14:32.256159" level="INFO">Releasing special key ENTER.</msg>
 <arg>${search_input_xpath}</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="PASS" start="2024-09-24T00:38:30.399194" elapsed="1.549993"/>
+<status status="PASS" start="2024-09-24T02:14:31.946353" elapsed="0.670583"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-24T00:38:41.949464" level="INFO">Slept 10 seconds.</msg>
+<msg time="2024-09-24T02:14:42.619125" level="INFO">Slept 10 seconds.</msg>
 <arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-24T00:38:31.949187" elapsed="10.000277"/>
+<status status="PASS" start="2024-09-24T02:14:32.616936" elapsed="10.003349"/>
 </kw>
-<arg>text</arg>
+<arg>${VALID_SEARCH_TERM}</arg>
 <arg>${SEARCH_ELEMENT}</arg>
 <arg>${SEARCH_INPUT_ELEMENT}</arg>
-<status status="PASS" start="2024-09-24T00:38:30.006879" elapsed="11.942585"/>
+<status status="PASS" start="2024-09-24T02:14:31.640152" elapsed="10.980133"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-24T02:14:42.620285" elapsed="2.320819"/>
 </kw>
 <doc>Teste de busca com um termo válido.</doc>
-<status status="PASS" start="2024-09-24T00:38:27.326571" elapsed="14.622893"/>
+<status status="PASS" start="2024-09-24T02:14:29.164432" elapsed="15.777678"/>
+</test>
+<test id="s1-t2" name="Invalid Search Test" line="16">
+<kw name="Open Browser To Search Page" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:14:44.942110" level="INFO">Opening browser 'Chrome' to base url 'https://blogdoagi.com.br'.</msg>
+<arg>${address}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-24T02:14:44.942110" elapsed="3.092676"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-24T02:14:48.035827" elapsed="0.084608"/>
+</kw>
+<arg>${URL}</arg>
+<status status="PASS" start="2024-09-24T02:14:44.942110" elapsed="3.179218"/>
+</kw>
+<kw name="Click and search" owner="keywords">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:14:48.123876" level="INFO">Clicking link '//*[@id="ast-desktop-header"]/div/div/div/div/div[3]/div[2]/div/div/a'.</msg>
+<arg>${button_search_xpath}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T02:14:48.123876" elapsed="0.180340"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:14:48.306249" level="INFO">Typing text 'Morpheus' into text field '//*[@id="search-field"]'.</msg>
+<arg>${search_input_xpath}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T02:14:48.305246" elapsed="0.159119"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:14:48.467269" level="INFO">Sending key(s) ('ENTER',) to //*[@id="search-field"] element.</msg>
+<msg time="2024-09-24T02:14:48.766413" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-09-24T02:14:48.767423" level="INFO">Releasing special key ENTER.</msg>
+<arg>${search_input_xpath}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-24T02:14:48.465807" elapsed="0.462167"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T02:14:58.931074" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T02:14:48.928965" elapsed="10.002109"/>
+</kw>
+<arg>${INVALID_SEARCH_TERM}</arg>
+<arg>${SEARCH_ELEMENT}</arg>
+<arg>${SEARCH_INPUT_ELEMENT}</arg>
+<status status="PASS" start="2024-09-24T02:14:48.121328" elapsed="10.809746"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-24T02:14:58.936469" elapsed="2.611604"/>
+</kw>
+<doc>Teste de busca com um termo inválido.</doc>
+<status status="PASS" start="2024-09-24T02:14:44.942110" elapsed="16.605963"/>
+</test>
+<test id="s1-t3" name="Empty Search Test" line="22">
+<kw name="Open Browser To Search Page" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:01.553696" level="INFO">Opening browser 'Chrome' to base url 'https://blogdoagi.com.br'.</msg>
+<arg>${address}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-24T02:15:01.553696" elapsed="2.146757"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-24T02:15:03.700453" elapsed="0.079155"/>
+</kw>
+<arg>${URL}</arg>
+<status status="PASS" start="2024-09-24T02:15:01.553696" elapsed="2.227438"/>
+</kw>
+<kw name="Click and search" owner="keywords">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:03.790018" level="INFO">Clicking link '//*[@id="ast-desktop-header"]/div/div/div/div/div[3]/div[2]/div/div/a'.</msg>
+<arg>${button_search_xpath}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T02:15:03.787745" elapsed="0.153937"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:03.945690" level="INFO">Typing text '' into text field '//*[@id="search-field"]'.</msg>
+<arg>${search_input_xpath}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T02:15:03.943688" elapsed="0.137646"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:04.085624" level="INFO">Sending key(s) ('ENTER',) to //*[@id="search-field"] element.</msg>
+<msg time="2024-09-24T02:15:04.401536" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-09-24T02:15:04.402536" level="INFO">Releasing special key ENTER.</msg>
+<arg>${search_input_xpath}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-24T02:15:04.082341" elapsed="1.530993"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T02:15:15.616601" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T02:15:05.614507" elapsed="10.003134"/>
+</kw>
+<arg>${EMPTY_SEARCH_TERM}</arg>
+<arg>${SEARCH_ELEMENT}</arg>
+<arg>${SEARCH_INPUT_ELEMENT}</arg>
+<status status="PASS" start="2024-09-24T02:15:03.782984" elapsed="11.834657"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-24T02:15:15.617641" elapsed="2.321239"/>
+</kw>
+<doc>Teste de busca com um termo vazio ou em branco.</doc>
+<status status="PASS" start="2024-09-24T02:15:01.548073" elapsed="16.390807"/>
+</test>
+<test id="s1-t4" name="Special char Search Test" line="28">
+<kw name="Open Browser To Search Page" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:17.938880" level="INFO">Opening browser 'Chrome' to base url 'https://blogdoagi.com.br'.</msg>
+<arg>${address}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-24T02:15:17.938880" elapsed="2.419535"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-24T02:15:20.358415" elapsed="0.105489"/>
+</kw>
+<arg>${URL}</arg>
+<status status="PASS" start="2024-09-24T02:15:17.938880" elapsed="2.525920"/>
+</kw>
+<kw name="Click and search" owner="keywords">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:20.474805" level="INFO">Clicking link '//*[@id="ast-desktop-header"]/div/div/div/div/div[3]/div[2]/div/div/a'.</msg>
+<arg>${button_search_xpath}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T02:15:20.472794" elapsed="0.158240"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:20.635518" level="INFO">Typing text '!@#$%^&amp;*&amp;#' into text field '//*[@id="search-field"]'.</msg>
+<arg>${search_input_xpath}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T02:15:20.633520" elapsed="0.179579"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:20.816351" level="INFO">Sending key(s) ('ENTER',) to //*[@id="search-field"] element.</msg>
+<msg time="2024-09-24T02:15:21.119253" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-09-24T02:15:21.119253" level="INFO">Releasing special key ENTER.</msg>
+<arg>${search_input_xpath}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-24T02:15:20.813651" elapsed="0.572739"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T02:15:31.388711" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T02:15:21.387389" elapsed="10.001322"/>
+</kw>
+<arg>${SPECIAL_CHAR_SEARCH_TERM}</arg>
+<arg>${SEARCH_ELEMENT}</arg>
+<arg>${SEARCH_INPUT_ELEMENT}</arg>
+<status status="PASS" start="2024-09-24T02:15:20.467710" elapsed="10.921001"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-24T02:15:31.388711" elapsed="2.159910"/>
+</kw>
+<doc>Teste de busca com um termo com caractéres especiais.</doc>
+<status status="PASS" start="2024-09-24T02:15:17.938880" elapsed="15.609741"/>
+</test>
+<test id="s1-t5" name="White Spaces Search Test" line="34">
+<kw name="Open Browser To Search Page" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:33.548621" level="INFO">Opening browser 'Chrome' to base url 'https://blogdoagi.com.br'.</msg>
+<arg>${address}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-24T02:15:33.548621" elapsed="2.266410"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-24T02:15:35.817034" elapsed="0.069398"/>
+</kw>
+<arg>${URL}</arg>
+<status status="PASS" start="2024-09-24T02:15:33.548621" elapsed="2.337811"/>
+</kw>
+<kw name="Click and search" owner="keywords">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:35.886432" level="INFO">Clicking link '//*[@id="ast-desktop-header"]/div/div/div/div/div[3]/div[2]/div/div/a'.</msg>
+<arg>${button_search_xpath}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T02:15:35.886432" elapsed="0.161050"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:36.052462" level="INFO">Typing text 'Empréstimo consignado' into text field '//*[@id="search-field"]'.</msg>
+<arg>${search_input_xpath}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T02:15:36.049471" elapsed="0.228261"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:36.277732" level="INFO">Sending key(s) ('ENTER',) to //*[@id="search-field"] element.</msg>
+<msg time="2024-09-24T02:15:36.566556" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-09-24T02:15:36.567557" level="INFO">Releasing special key ENTER.</msg>
+<arg>${search_input_xpath}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-24T02:15:36.277732" elapsed="0.561893"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T02:15:46.843795" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T02:15:36.841625" elapsed="10.002170"/>
+</kw>
+<arg>${SEARCH_TERM_WITH_SPACES}</arg>
+<arg>${SEARCH_ELEMENT}</arg>
+<arg>${SEARCH_INPUT_ELEMENT}</arg>
+<status status="PASS" start="2024-09-24T02:15:35.886432" elapsed="10.957363"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-24T02:15:46.843795" elapsed="2.147777"/>
+</kw>
+<doc>Teste de busca com um termo com espaços.</doc>
+<status status="PASS" start="2024-09-24T02:15:33.548621" elapsed="15.445187"/>
+</test>
+<test id="s1-t6" name="Long inpunt Search Test" line="40">
+<kw name="Open Browser To Search Page" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:49.003604" level="INFO">Opening browser 'Chrome' to base url 'https://blogdoagi.com.br'.</msg>
+<arg>${address}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-24T02:15:49.001603" elapsed="2.426728"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-24T02:15:51.429328" elapsed="0.127320"/>
+</kw>
+<arg>${URL}</arg>
+<status status="PASS" start="2024-09-24T02:15:49.000605" elapsed="2.557042"/>
+</kw>
+<kw name="Click and search" owner="keywords">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:51.568065" level="INFO">Clicking link '//*[@id="ast-desktop-header"]/div/div/div/div/div[3]/div[2]/div/div/a'.</msg>
+<arg>${button_search_xpath}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T02:15:51.563064" elapsed="0.193173"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:51.759242" level="INFO">Typing text 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis fermentum imperdiet. Phasellus ligula metus, posuere pulvinar molestie et, maximus eu tortor' into text field '//*[@id="search-field"]'.</msg>
+<arg>${search_input_xpath}</arg>
+<arg>${input}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T02:15:51.757240" elapsed="0.558083"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-24T02:15:52.318245" level="INFO">Sending key(s) ('ENTER',) to //*[@id="search-field"] element.</msg>
+<msg time="2024-09-24T02:15:52.642310" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-09-24T02:15:52.643307" level="INFO">Releasing special key ENTER.</msg>
+<arg>${search_input_xpath}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-24T02:15:52.316224" elapsed="0.588914"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T02:16:02.908678" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T02:15:52.907423" elapsed="10.002309"/>
+</kw>
+<arg>${LONG_SEARCH_TERM}</arg>
+<arg>${SEARCH_ELEMENT}</arg>
+<arg>${SEARCH_INPUT_ELEMENT}</arg>
+<status status="PASS" start="2024-09-24T02:15:51.559646" elapsed="11.350494"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-24T02:16:02.911193" elapsed="2.177106"/>
+</kw>
+<doc>Teste de busca com um termo com caractéres muito numerosos.</doc>
+<status status="PASS" start="2024-09-24T02:15:48.996312" elapsed="16.092988"/>
 </test>
 <doc>Testes para verificar a funcionalidade de busca no sistema.</doc>
-<status status="PASS" start="2024-09-24T00:38:27.151870" elapsed="14.798622"/>
-</suite>
-<status status="PASS" start="2024-09-24T00:38:27.150393" elapsed="14.801494"/>
-</suite>
-<status status="PASS" start="2024-09-24T00:38:27.148395" elapsed="14.805650"/>
-</suite>
-<status status="PASS" start="2024-09-24T00:38:27.127349" elapsed="14.826696"/>
+<status status="PASS" start="2024-09-24T02:14:28.536881" elapsed="96.557628"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Desafio-Agi">Desafio-Agi</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">Desafio-Agi.Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Functional Tests">Desafio-Agi.Tests.Functional Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Search Tests">Desafio-Agi.Tests.Functional Tests.Search Tests</stat>
+<stat pass="6" fail="0" skip="0" id="s1" name="Search Tests">Search Tests</stat>
 </suite>
 </statistics>
 <errors>
