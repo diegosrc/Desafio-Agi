@@ -16,3 +16,7 @@ Click and search
     Press Keys  ${search_input_xpath}    ENTER
     Sleep    10
 
+Text element matching
+    [Arguments]    ${element_locator}    ${expected_text}
+    ${element_text}=    Get Text    ${element_locator}
+    Should Be Equal    ${element_text}    ${expected_text}
