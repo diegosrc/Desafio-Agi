@@ -24,6 +24,7 @@ Aqui ficam os arquivos que são compartilhados entre diferentes casos de teste:
 
 ### Executando a Automação
 
+Os comando a seguir devem ser executados na pasta raiz do projeto
 Primeiro ative o seu Python Environment:
 
 ```bash
